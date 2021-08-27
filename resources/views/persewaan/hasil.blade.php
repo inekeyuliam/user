@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en"> 
   <head>
     <!-- Site Title-->
-    <title>Sistem Rekomendasi Wisata Jawa Timur</title>
+    <title>Sistem Rekomendasi Persewaan Kendaraan Jawa Timur</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/fonts.css')}}">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"> </script>
@@ -84,16 +82,14 @@
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <div class="rd-navbar-brand"><P>SISTEM REKOMENDASI WISATA, HOTEL, PERSEWAAN DI JAWA TIMUR</P></div>
+                <div class="rd-navbar-brand"><P>SISTEM REKOMENDASI PERSEWAAN JAWA TIMUR</P></div>
               </div>
               <div class="rd-navbar-aside-center">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
                     <!-- Example single danger button -->
-                      <li><a href="/"> HOME</a> </li>
-
-                      <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Tempat Wisata</a>
+                    <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rekomendasi Wisata</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/wisata">Daftar Wisata</a>
                         <a class="dropdown-item" href="/rekomendasi/wisata">Rekomendasi Wisata</a>
@@ -102,14 +98,14 @@
                       </div>
                     </li>
                     <li><a href="/hotel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Hotel</a>
+                    Rekomendasi Hotel</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/hotel">Daftar Hotel</a>
                         <a class="dropdown-item" href="/rekomendasi/hotel">Rekomendasi Hotel</a>
                       </div>
                     </li>
                     <li><a href="/persewaan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Persewaan</a>
+                    Rekomendasi Persewaan</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/persewaan">Daftar Persewaan</a>
                         <a class="dropdown-item" href="/rekomendasi/persewaan">Rekomendasi Persewaan</a>
@@ -125,7 +121,7 @@
         <!-- Breadcrumbs-->
         <section class="breadcrumbs-custom" style="background: url(&quot;images/backgroundhasil.png&quot;); background-size: cover;">
           <div class="container">
-            <h1 class="breadcrumbs-custom-subtitle">Hasil Rekomendasi Wisata</h1>
+            <h1 class="breadcrumbs-custom-subtitle">Hasil Rekomendasi Persewaan</h1>
           </div>
         </section>
 
@@ -137,7 +133,7 @@
         @foreach($ranking as $key=>$item)
           <div class="row row-50 justify-content-md-center align-items-lg-center justify-content-xl-between flex-lg-row-reverse">
             <div class="col-md-10 col-lg-6 col-xl-5">
-              <h3><a href="{{url('wisata/'.$item['id'])}}">{{ $item['nama'] }}</a></h3>
+              <h3><a href="{{url('persewaan/'.$item['id'])}}">{{ $item['nama'] }}</a></h3>
               <div class="divider divider-decorate"></div>
              @if($item['rating'] == 4.5 || $item['rating'] > 4.5 )
               <p class="heading-5">  
@@ -180,7 +176,7 @@
                   <span class="fa fa-star"></span>
                   {{$item['rating']}} / 5</p>              
               @endif
-              <p class="text-spacing-sm">Alamat : {{$item['alamat']}}</p><a class="button button-default-outline button-nina" href="{{url('wisata/'.$item['id'])}}">Lihat Wisata</a>
+              <p class="text-spacing-sm">Alamat : {{$item['alamat']}}</p><a class="button button-default-outline button-nina" href="{{url('persewaan/'.$item['id'])}}">Lihat Persewaan</a>
             </div>
             <div class="col-md-10 col-lg-6"><img src="{{asset('images/about-us-1-720x459.jpg')}}" alt="" width="720" height="459"/>
             </div>

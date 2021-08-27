@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en"> 
   <head>
     <!-- Site Title-->
-    <title>Sistem Rekomendasi Wisata Jawa Timur</title>
+    <title>Sistem Rekomendasi Persewaan Kendaraan Jawa Timur</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,23 +77,22 @@
       <!-- Page Header-->
       <header class="section page-header">
         <!-- RD Navbar-->
-        <div class="rd-navbar-wrap rd-navbar-default">
-          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-md-stick-up-offset="2px" data-lg-stick-up-offset="2px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true">
-          <div class="rd-navbar-inner">
+        <div class="rd-navbar-wrap rd-navbar-corporate">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-md-stick-up-offset="130px" data-lg-stick-up-offset="100px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-inner">
               <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <div class="rd-navbar-brand"><P>SISTEM REKOMENDASI WISATA, HOTEL, PERSEWAAN DI JAWA TIMUR</P></div>
+                <div class="rd-navbar-brand"><P>SISTEM REKOMENDASI PERSEWAAN KENDARAAN JAWA TIMUR</P></div>
               </div>
               <div class="rd-navbar-aside-center">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="/"> HOME</a> </li>
-
                     <!-- Example single danger button -->
-                    <li><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Tempat Wisata</a>
+                    <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rekomendasi Wisata</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/wisata">Daftar Wisata</a>
                         <a class="dropdown-item" href="/rekomendasi/wisata">Rekomendasi Wisata</a>
@@ -102,14 +101,14 @@
                       </div>
                     </li>
                     <li><a href="/hotel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Hotel</a>
+                    Rekomendasi Hotel</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/hotel">Daftar Hotel</a>
                         <a class="dropdown-item" href="/rekomendasi/hotel">Rekomendasi Hotel</a>
                       </div>
                     </li>
                     <li><a href="/persewaan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Persewaan</a>
+                    Rekomendasi Persewaan</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/persewaan">Daftar Persewaan</a>
                         <a class="dropdown-item" href="/rekomendasi/persewaan">Rekomendasi Persewaan</a>
@@ -128,40 +127,40 @@
           <!-- Swiper-->
           <div class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left swiper-align-left-custom context-dark bg-gray-darker" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" data-slide-bg="images/swiper-1.jpg">
+              <div class="swiper-slide" data-slide-bg="images/car-1.jpeg">
                 <div class="swiper-slide-caption">
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>Hundreds of Amazing Destinations</h3>
+                        <h3>Persewaan Kendaraan Jawa Timur</h3>
                         <div class="divider divider-decorate"></div>
-                        <p class="text-spacing-sm">We offer a variety of destinations to travel to, ranging from exotic to some extreme ones. They include very popular countries and cities like Paris, Rio de Janeiro, Cairo and a lot of others.</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
+                        <p class="text-spacing-sm"></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide" data-slide-bg="images/swiper-2.jpg">
+              <div class="swiper-slide" data-slide-bg="images/car-2.jpeg">
                 <div class="swiper-slide-caption">
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>The Trip of Your Dream</h3>
+                      <h3>Persewaan Kendaraan Jawa Timur</h3>
                         <div class="divider divider-decorate"></div>
-                        <p class="text-spacing-sm">Our travel agency is ready to offer you an exciting vacation that is designed to fit your own needs and wishes. Whether it’s an exotic cruise or a trip to your favorite resort, you will surely have the best experience.</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
+                        <p class="text-spacing-sm"></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide" data-slide-bg="images/swiper-3.jpg">
+              <div class="swiper-slide" data-slide-bg="images/car-3.png">
                 <div class="swiper-slide-caption">
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>unique Travel Insights</h3>
+                      <h3>Persewaan Kendaraan Jawa Timur</h3>
                         <div class="divider divider-decorate"></div>
-                        <p class="text-spacing-sm">Our team is ready to provide you with unique weekly travel insights that include photos, videos, and articles about untravelled tourist paths. We know everything about the places you’ve never been to!</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
+                        <p class="text-spacing-sm"></p>
                       </div>
                     </div>
                   </div>
@@ -179,89 +178,17 @@
               </div>
             </div>
           </div>
-          <div class="container container-bigger form-request-wrap form-request-wrap-modern">
-            <div class="row row-fix justify-content-sm-center justify-content-lg-end">
-              <div class="col-lg-6 col-xxl-5">
-                <div class="form-request form-request-modern bg-gray-lighter novi-background">
-                  <h4>Find your Tour</h4>
-                  <!-- RD Mailform-->
-                  <form class="rd-mailform form-fix">
-                    <div class="row row-20 row-fix">
-                      <div class="col-sm-12">
-                        <label class="form-label-outside">From</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                            <option value="1">New York</option>
-                            <option value="2">Lisbon</option>
-                            <option value="3">Stockholm</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside">To</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                            <option value="1">Chicago</option>
-                            <option value="2">Madrid</option>
-                            <option value="3">Paris</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-lg-6">
-                        <label class="form-label-outside">Depart Date</label>
-                        <div class="form-wrap form-wrap-validation">
-                          <!-- Select -->
-                          <input class="form-input" id="dateForm" name="date" type="text" data-time-picker="date">
-                          <label class="form-label" for="dateForm">Choose the date</label>
-                          <!--select.form-input.select-filter(data-placeholder="All", data-minimum-results-for-search="Infinity",  name='city')-->
-                          <!--  option(value="1") Choose the date-->
-                          <!--  option(value="2") Primary-->
-                          <!--  option(value="3") Middle-->
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-lg-6">
-                        <label class="form-label-outside">Duration</label>
-                        <div class="form-wrap form-wrap-validation">
-                          <!-- Select 2-->
-                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                            <option value="1">Any length</option>
-                            <option value="2">2 days</option>
-                            <option value="3">3 days</option>
-                            <option value="4">4 days</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="form-label-outside">Adults</label>
-                        <div class="form-wrap form-wrap-modern">
-                          <input class="form-input input-append" id="form-element-stepper" type="number" min="0" max="300" value="2">
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="form-label-outside">Children</label>
-                        <div class="form-wrap form-wrap-modern">
-                          <input class="form-input input-append" id="form-element-stepper-1" type="number" min="0" max="300" value="0">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-wrap form-button">
-                      <button class="button button-block button-secondary" type="submit">search flight</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-
-      <!-- <section class="section section-variant-1 bg-default novi-background bg-cover"> 
-        <div class="container container-bigger form-request-wrap form-request-wrap-modern">
+      <section class="section section-variant-1 bg-default novi-background bg-cover"> 
+      <div class="container container-bigger form-request-wrap form-request-wrap-modern">
             <div class="row row-fix justify-content-sm-center justify-content-lg-end">
               <div class="col-lg-12 col-xxl-15">
                 <div class="form-request form-request-modern bg-gray-lighter novi-background">
-                  <h4>Cari Rekomendasi Wisata</h4>
-                 
+                  <h4>Cari Rekomendasi Persewaan Kendaraan</h4>
+                  <!-- RD Mailform-->
+                  <!-- <a class="button" href="{{ url('/wisata/store') }}">link</a> -->
+
                   <form class="rd-mailform form-fix" id="hitung" method="POST">
                   <input type="hidden" name="_token" value="{{ csrf_token() }}">
                       <div class="col-sm-12 row">
@@ -277,6 +204,7 @@
                         <label class="col-sm-2 col-form-label">{{$kriteria1->kriteria}}</label>
                         <div class="col-sm-8">
 
+                          <!-- Select 2-->
                           <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="prioritas[]" id="prioritas">
                           <option value="" disabled> Pilih Tingkat Kepentingan </option>
                             <option value=1>1 - Sama pentingnya dengan</option>
@@ -313,25 +241,25 @@
                         <input type="hidden" name="biaya" id="biaya" value="{{ $cst->id }}">
                       @endforeach
                     <div class="form-wrap form-button">
-                      <a class="button button-secondary" type="submit" id="cari">Cari Rekomendasi Wisata</a>
+                      <a class="button button-secondary" type="submit" id="cari">Cari Rekomendasi Persewaan</a>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
           </div>
-      </section> -->
+      </section>
      
       <section class="section section-variant-1 bg-default novi-background bg-cover"> 
         <div class="container container-wide">
           <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
             <div class="col-xl-8">
               <div class="parallax-text-wrap">
-                <h3>Wisata Terbaik di Jawa Timur</h3><span class="parallax-text">Hot tours</span>
+                <h3>Persewaan Terbaik di Jawa Timur</h3><span class="parallax-text">Hot tours</span>
               </div>
               <hr class="divider divider-decorate">
             </div>
-            <div class="col-xl-3 text-xl-right"><a class="button button-secondary button-nina" href="/daftar/wisata">Lihat Daftar Wisata</a></div>
+            <div class="col-xl-3 text-xl-right"><a class="button button-secondary button-nina" href="#">view all tours</a></div>
           </div>
           <div class="row row-50">
             <div class="col-md-6 col-xl-4">
@@ -662,14 +590,14 @@
       if(cr <= 0.1)
       {
         console.log('konsisten')
-        $(this).prop('href', '/gethasil?data='+ JSON.stringify(arrayHasil));
+        $(this).prop('href', '/gethasilpersewaan?data='+ JSON.stringify(arrayHasil));
+
       }
       else
       {
         console.log('tidak konsisten, masukan ulang')
         $("#hitung")[0].reset();
         alert("Matriks Tidak Konsisten, Masukan Perbandingan Lagi");
-
       }
       ////////////////////////////////////////////// MATRIKS TERNORMALISASI R  //////////////////////////////////////////
       // var arr = []

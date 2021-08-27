@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en"> 
   <head>
     <!-- Site Title-->
-    <title>Sistem Rekomendasi Wisata Jawa Timur</title>
+    <title>Sistem Rekomendasi Hotel Jawa Timur</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,26 +80,41 @@
         <div class="rd-navbar-wrap rd-navbar-corporate">
           <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-md-stick-up-offset="130px" data-lg-stick-up-offset="100px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true">
             <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
-            <div class="rd-navbar-top-panel rd-navbar-collapse novi-background">
-            
-              <div class="rd-navbar-top-panel-inner"><a class="button button-sm button-secondary button-nina" href="{{asset('https://www.templatemonster.com/website-templates/62466.html')}}" target="_blank">buy template now</a></div>
-            </div>
             <div class="rd-navbar-inner">
               <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                <div class="rd-navbar-brand"><P>SISTEM REKOMENDASI WISATA JAWA TIMUR</P></div>
+                <div class="rd-navbar-brand"><P>SISTEM REKOMENDASI HOTEL JAWA TIMUR</P></div>
               </div>
               <div class="rd-navbar-aside-center">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="index.html">Rekomendasi Wisata</a>
+                    <!-- Example single danger button -->
+                    <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rekomendasi Wisata</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/daftar/wisata">Daftar Wisata</a>
+                        <a class="dropdown-item" href="/rekomendasi/wisata">Rekomendasi Wisata</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <!-- <a class="dropdown-item" href="#">Separated link</a> -->
+                      </div>
                     </li>
-                    <li><a href="contacts.html">Rekomendasi Hotel</a>
+                    <li><a href="/hotel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rekomendasi Hotel</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/daftar/hotel">Daftar Hotel</a>
+                        <a class="dropdown-item" href="/rekomendasi/hotel">Rekomendasi Hotel</a>
+                      </div>
                     </li>
-                    <li><a href="typography.html">Rekomendasi Persewaan Kendaraan</a>
+                    <li><a href="/persewaan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rekomendasi Persewaan</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/daftar/persewaan">Daftar Persewaan</a>
+                        <a class="dropdown-item" href="/rekomendasi/persewaan">Rekomendasi Persewaan</a>
+                      </div>
                     </li>
+                    <li><a href="profile"> ABOUT</a></li>
                   </ul>
                 </div>
               </div>
@@ -112,12 +127,12 @@
           <!-- Swiper-->
           <div class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left swiper-align-left-custom context-dark bg-gray-darker" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" data-slide-bg="images/swiper-1.jpg">
+              <div class="swiper-slide" data-slide-bg="images/hotel-3.jpeg">
                 <div class="swiper-slide-caption">
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>Wisata Jawa Timur</h3>
+                        <h3>Hotel Jawa Timur</h3>
                         <div class="divider divider-decorate"></div>
                         <p class="text-spacing-sm"></p>
                       </div>
@@ -125,12 +140,12 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide" data-slide-bg="images/swiper-2.jpg">
+              <div class="swiper-slide" data-slide-bg="images/hotel-2.jpeg">
                 <div class="swiper-slide-caption">
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                      <h3>Wisata Jawa Timur</h3>
+                      <h3>Hotel Jawa Timur</h3>
                         <div class="divider divider-decorate"></div>
                         <p class="text-spacing-sm"></p>
                       </div>
@@ -138,12 +153,12 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide" data-slide-bg="images/swiper-3.jpg">
+              <div class="swiper-slide" data-slide-bg="images/hotel-1.jpeg">
                 <div class="swiper-slide-caption">
                   <div class="container container-bigger swiper-main-section">
                     <div class="row row-fix justify-content-sm-center justify-content-md-start">
                       <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                      <h3>Wisata Jawa Timur</h3>
+                      <h3>Hotel Jawa Timur</h3>
                         <div class="divider divider-decorate"></div>
                         <p class="text-spacing-sm"></p>
                       </div>
@@ -163,7 +178,6 @@
               </div>
             </div>
           </div>
-      
         </div>
       </section>
       <section class="section section-variant-1 bg-default novi-background bg-cover"> 
@@ -171,19 +185,12 @@
             <div class="row row-fix justify-content-sm-center justify-content-lg-end">
               <div class="col-lg-12 col-xxl-15">
                 <div class="form-request form-request-modern bg-gray-lighter novi-background">
-                  <h4>Cari Rekomendasi Wisata</h4>
+                  <h4> Rekomendasi Hotel</h4>
                   <!-- RD Mailform-->
+                  <!-- <a class="button" href="{{ url('/wisata/store') }}">link</a> -->
+
                   <form class="rd-mailform form-fix" id="hitung" method="POST">
                   <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                      <div class="col-sm-12 row">
-                      <h5 id='something'>Masukan Nilai Kriteria Alternatif</h5>
-                      </div>
-                      <div class="col-sm-12 col-lg-12 row">
-                       @foreach($nilai as $nilaikriteria)
-                        <input type="hidden" name="nilai" id="nilai" value="{{ $nilaikriteria }}">
-                        @endforeach
-                       
-                      </div>
                       <div class="col-sm-12 row">
                         <h5>Masukan Nilai Perbandingan Kriteria</h5>
                       </div>
@@ -234,7 +241,7 @@
                         <input type="hidden" name="biaya" id="biaya" value="{{ $cst->id }}">
                       @endforeach
                     <div class="form-wrap form-button">
-                      <button class="button button-secondary" type="submit" id="cari">Cari Rekomendasi</button>
+                      <a class="button button-secondary" type="submit" id="cari">Cari Rekomendasi Hotel</a>
                     </div>
                   </form>
                 </div>
@@ -248,7 +255,7 @@
           <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
             <div class="col-xl-8">
               <div class="parallax-text-wrap">
-                <h3>Wisata Terbaik di Jawa Timur</h3><span class="parallax-text">Hot tours</span>
+                <h3>Hotel Terbaik di Jawa Timur</h3><span class="parallax-text">Hot tours</span>
               </div>
               <hr class="divider divider-decorate">
             </div>
@@ -339,7 +346,6 @@
               <p class="right">&#169;&nbsp;<span class="copyright-year"></span> All Rights Reserved. Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com">TemplateMonster</a></p>
             </div>
             <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">
-             
             </div>
           </div>
         </div>
@@ -584,63 +590,74 @@
       if(cr <= 0.1)
       {
         console.log('konsisten')
+        $(this).prop('href', '/gethasilhotel?data='+ JSON.stringify(arrayHasil));
+
       }
       else
       {
         console.log('tidak konsisten, masukan ulang')
+        $("#hitung")[0].reset();
+        alert("Matriks Tidak Konsisten, Masukan Perbandingan Lagi");
       }
       ////////////////////////////////////////////// MATRIKS TERNORMALISASI R  //////////////////////////////////////////
-      var arr = []
-      form.querySelectorAll('#nilai').forEach(function (input) {
-          arr.push(parseFloat(input.value).toFixed(4));
-      })
+      // var arr = []
+      // form.querySelectorAll('#nilai').forEach(function (input) {
+      //     arr.push(parseFloat(input.value).toFixed(4));
+      // })
 
-      var arrR = []; //matriks ternormalisasi R
-      for(var i = 0; i < arr.length; i += 7) {
-        arrR.push(arr.slice(i, i+7));
-      }
-      console.log(arrR)
+      // var arrR = []; //matriks ternormalisasi R
+      // for(var i = 0; i < arr.length; i += 7) {
+      //   arrR.push(arr.slice(i, i+7));
+      // }
+      // console.log(arrR)
 
       ////////////////////////////////////////////// PERKALIAN MATRIKS DG BOBOT KRITERIA  //////////////////////////////////////////
      
-      multiArray = []
-      matriksbobot = []
-      hasil = arrayHasil.flat()
-      for (k=0; k<arrR.length; k++){
-        baris = arrR[k];
-        const multipleNumber = (arr1, arr2) => arr1.map(function (num, idx) { return parseFloat(num*arr2[idx]).toFixed(4)  });
-        matriksbobot.push(multipleNumber(baris,hasil))
-      }
-      console.log('Matriks normalisasi dengan bobot prioritas)')
-      console.log(matriksbobot)
+      // multiArray = []
+      // matriksbobot = []
+      // hasil = arrayHasil.flat()
+      // for (k=0; k<arrR.length; k++){
+      //   baris = arrR[k];
+      //   const multipleNumber = (arr1, arr2) => arr1.map(function (num, idx) { return parseFloat(num*arr2[idx]).toFixed(4)  });
+      //   matriksbobot.push(multipleNumber(baris,hasil))
+      // }
+      // console.log('Matriks normalisasi dengan bobot prioritas)')
+      // console.log(matriksbobot)
 
-      ////////////////////////////////////////////// CARI SOLUSI IDEAL POSITIF DAN NEGATIF  //////////////////////////////////////////
-      var cost =[]
-      form.querySelectorAll('#biaya').forEach(function (input) {
-          var nilai = parseInt(input.value)
-          cost.push(nilai);
-      })
-      console.log(cost);
-      Apositif = []
-      Anegatif = []
+      // ////////////////////////////////////////////// CARI SOLUSI IDEAL POSITIF DAN NEGATIF  //////////////////////////////////////////
+      // var cost =[]
+      // form.querySelectorAll('#biaya').forEach(function (input) {
+      //     var nilai = parseInt(input.value)
+      //     cost.push(nilai);
+      // })
+      
+      ////////////////////////////////////////////// KIRIM DATA AHP ////////////////////////////////////////////// 
+
+      // console.log(cost);
+     
+
 
     })
-      //////////////////////////////////////////////       ////////////////////////////////////////////// 
       
       function getData() {
-      $.ajax({
-                headers:{    
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                url: 'gethasil',
-                type: 'POST',
-                data: { data: arrayHasil },
-                success: function(response)
-                {
-                  $('#something').html(response);
-                  //  window.location = "{{ url('/hasilwisata') }}";
-                }
-            });
+      
+      // $.ajax({
+      //           headers:{    
+      //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      //           },
+      //           url: 'gethasil',
+      //           type: 'POST',
+      //           data: {
+      //              data: arrayHasil 
+      //           },
+      //           success: function(response)
+      //           {
+      //             //  $('#something').html(response);
+      //             //  window.location = "{{ url('/hasilwisata') }}";
+      //           }
+      //       });
+
+
       }
  
    

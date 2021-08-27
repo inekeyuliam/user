@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/fonts.css')}}">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"> </script>
@@ -75,7 +75,7 @@
     <!-- Page-->
     <div class="page">
       <!-- Page Header-->
-      <header class="section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2 novi-background bg-cover">
+      <header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap rd-navbar-default">
           <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-md-stick-up-offset="2px" data-lg-stick-up-offset="2px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true">
@@ -89,10 +89,10 @@
               <div class="rd-navbar-aside-center">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <!-- Example single danger button -->
-                      <li><a href="/"> HOME</a> </li>
+                    <li><a href="/"> HOME</a> </li>
 
-                      <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- Example single danger button -->
+                    <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    Tempat Wisata</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/wisata">Daftar Wisata</a>
@@ -122,72 +122,101 @@
             </div>
           </nav>
         </div>
-        <!-- Breadcrumbs-->
-        <section class="breadcrumbs-custom" style="background: url(&quot;images/backgroundhasil.png&quot;); background-size: cover;">
-          <div class="container">
-            <h1 class="breadcrumbs-custom-subtitle">Hasil Rekomendasi Wisata</h1>
-          </div>
-        </section>
-
       </header>
-      <!-- hi, we are brave-->
-      <!-- {{ json_encode($ranking)}} -->
-      <section class="section section-lg bg-default">
-        <div class="container container-bigger">
-        @foreach($ranking as $key=>$item)
-          <div class="row row-50 justify-content-md-center align-items-lg-center justify-content-xl-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-5">
-              <h3><a href="{{url('wisata/'.$item['id'])}}">{{ $item['nama'] }}</a></h3>
-              <div class="divider divider-decorate"></div>
-             @if($item['rating'] == 4.5 || $item['rating'] > 4.5 )
-              <p class="heading-5">  
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                {{$item['rating']}} / 5</p>
-              @elseif($item['rating'] == 4.0 || $item['rating'] < 4.5  )
-                <p class="heading-5">  
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  {{$item['rating']}} / 5</p>
-              @elseif($item['rating'] == 3.0 || $item['rating'] < 4.0  )
-                <p class="heading-5">  
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  {{$item['rating']}} / 5</p> 
-              @elseif($item['rating'] == 2.0 || $item['rating'] < 3.0  )
-                <p class="heading-5">  
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  {{$item['rating']}} / 5</p> 
-              @elseif($item['rating'] == 1.0 || $item['rating'] < 2.0  )
-                <p class="heading-5">  
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  {{$item['rating']}} / 5</p>              
-              @endif
-              <p class="text-spacing-sm">Alamat : {{$item['alamat']}}</p><a class="button button-default-outline button-nina" href="{{url('wisata/'.$item['id'])}}">Lihat Wisata</a>
-            </div>
-            <div class="col-md-10 col-lg-6"><img src="{{asset('images/about-us-1-720x459.jpg')}}" alt="" width="720" height="459"/>
-            </div>
-          </div>
-          @endforeach
+      <section class="section">
+        <div class="swiper-form-wrap">
+          <!-- Swiper-->
+         
         </div>
       </section>
+        <section class="section section-variant-1 bg-default novi-background bg-cover"> 
+            <div class="container container-wide">
+            <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
+                <div class="col-xl-8">
+                <div class="parallax-text-wrap">
+                    <h3>Daftar Wisata di Jawa Timur</h3>
+                </div>
+                <hr class="divider divider-decorate">
+                </div>
+                <div class="col-xl-3 text-xl-right"><a class="button button-secondary button-nina" href="/daftar/wisata">Bandingkan Wisata</a></div>
+            </div>
+            <div class="row row-50">
+                <div class="col-md-6 col-xl-4">
+                <article class="event-default-wrap">
+                    <div class="event-default">
+                    <figure class="event-default-image"><img src="{{asset('images/landing-private-airlines-01-570x370.jpg')}}" alt="" width="570" height="370"/>
+                    </figure>
+                    <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+                    </div>
+                    <div class="event-default-inner">
+                    <h5><a class="event-default-title" href="#">France, Paris</a></h5><span class="heading-5">from $280</span>
+                    </div>
+                </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                <article class="event-default-wrap">
+                    <div class="event-default">
+                    <figure class="event-default-image"><img src="{{asset('images/landing-private-airlines-02-570x370.jpg')}}" alt="" width="570" height="370"/>
+                    </figure>
+                    <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+                    </div>
+                    <div class="event-default-inner">
+                    <h5><a class="event-default-title" href="#">USA, Boston</a></h5><span class="heading-5">from $480</span>
+                    </div>
+                </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                <article class="event-default-wrap">
+                    <div class="event-default">
+                    <figure class="event-default-image"><img src="{{asset('images/landing-private-airlines-03-570x370.jpg')}}" alt="" width="570" height="370"/>
+                    </figure>
+                    <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+                    </div>
+                    <div class="event-default-inner">
+                    <h5><a class="event-default-title" href="#">Italy, Venice</a></h5><span class="heading-5">from $350</span>
+                    </div>
+                </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                <article class="event-default-wrap">
+                    <div class="event-default">
+                    <figure class="event-default-image"><img src="{{asset('images/landing-private-airlines-04-570x370.jpg')}}" alt="" width="570" height="370"/>
+                    </figure>
+                    <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+                    </div>
+                    <div class="event-default-inner">
+                    <h5><a class="event-default-title" href="#">Spain, Benidorm</a></h5><span class="heading-5">from $350</span>
+                    </div>
+                </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                <article class="event-default-wrap">
+                    <div class="event-default">
+                    <figure class="event-default-image"><img src="{{asset('images/landing-private-airlines-05-570x370.jpg')}}" alt="" width="570" height="370"/>
+                    </figure>
+                    <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+                    </div>
+                    <div class="event-default-inner">
+                    <h5><a class="event-default-title" href="#">Egypt,  Sharm El Sheikh</a></h5><span class="heading-5">from $520</span>
+                    </div>
+                </article>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                <article class="event-default-wrap">
+                    <div class="event-default">
+                    <figure class="event-default-image"><img src="{{asset('images/landing-private-airlines-06-570x370.jpg')}}" alt="" width="570" height="370"/>
+                    </figure>
+                    <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+                    </div>
+                    <div class="event-default-inner">
+                    <h5><a class="event-default-title" href="#">UK, London</a></h5><span class="heading-5">from $600</span>
+                    </div>
+                </article>
+                </div>
+            </div>
+            </div>
+        </section>
+ 
       <footer class="section page-footer page-footer-minimal novi-background bg-cover text-center bg-gray-darker">
         <div class="container container-wide">
           <div class="row row-fix justify-content-sm-center align-items-md-center row-30">

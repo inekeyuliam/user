@@ -89,10 +89,10 @@
               <div class="rd-navbar-aside-center">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="/"> HOME</a> </li>
+                    <li><a href="/"> HOME</a> </li>
 
                     <!-- Example single danger button -->
-                    <li><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="active"><a href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    Tempat Wisata</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="/daftar/wisata">Daftar Wisata</a>
@@ -126,132 +126,7 @@
       <section class="section">
         <div class="swiper-form-wrap">
           <!-- Swiper-->
-          <div class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left swiper-align-left-custom context-dark bg-gray-darker" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-slide-bg="images/swiper-1.jpg">
-                <div class="swiper-slide-caption">
-                  <div class="container container-bigger swiper-main-section">
-                    <div class="row row-fix justify-content-sm-center justify-content-md-start">
-                      <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>Hundreds of Amazing Destinations</h3>
-                        <div class="divider divider-decorate"></div>
-                        <p class="text-spacing-sm">We offer a variety of destinations to travel to, ranging from exotic to some extreme ones. They include very popular countries and cities like Paris, Rio de Janeiro, Cairo and a lot of others.</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" data-slide-bg="images/swiper-2.jpg">
-                <div class="swiper-slide-caption">
-                  <div class="container container-bigger swiper-main-section">
-                    <div class="row row-fix justify-content-sm-center justify-content-md-start">
-                      <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>The Trip of Your Dream</h3>
-                        <div class="divider divider-decorate"></div>
-                        <p class="text-spacing-sm">Our travel agency is ready to offer you an exciting vacation that is designed to fit your own needs and wishes. Whether it’s an exotic cruise or a trip to your favorite resort, you will surely have the best experience.</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" data-slide-bg="images/swiper-3.jpg">
-                <div class="swiper-slide-caption">
-                  <div class="container container-bigger swiper-main-section">
-                    <div class="row row-fix justify-content-sm-center justify-content-md-start">
-                      <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-5">
-                        <h3>unique Travel Insights</h3>
-                        <div class="divider divider-decorate"></div>
-                        <p class="text-spacing-sm">Our team is ready to provide you with unique weekly travel insights that include photos, videos, and articles about untravelled tourist paths. We know everything about the places you’ve never been to!</p><a class="button button-default-outline button-nina button-sm" href="#">learn more</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Swiper controls-->
-            <div class="swiper-pagination-wrap">
-              <div class="container container-bigger">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container container-bigger form-request-wrap form-request-wrap-modern">
-            <div class="row row-fix justify-content-sm-center justify-content-lg-end">
-              <div class="col-lg-6 col-xxl-5">
-                <div class="form-request form-request-modern bg-gray-lighter novi-background">
-                  <h4>Find your Tour</h4>
-                  <!-- RD Mailform-->
-                  <form class="rd-mailform form-fix">
-                    <div class="row row-20 row-fix">
-                      <div class="col-sm-12">
-                        <label class="form-label-outside">From</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                            <option value="1">New York</option>
-                            <option value="2">Lisbon</option>
-                            <option value="3">Stockholm</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <label class="form-label-outside">To</label>
-                        <div class="form-wrap form-wrap-inline">
-                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                            <option value="1">Chicago</option>
-                            <option value="2">Madrid</option>
-                            <option value="3">Paris</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-lg-6">
-                        <label class="form-label-outside">Depart Date</label>
-                        <div class="form-wrap form-wrap-validation">
-                          <!-- Select -->
-                          <input class="form-input" id="dateForm" name="date" type="text" data-time-picker="date">
-                          <label class="form-label" for="dateForm">Choose the date</label>
-                          <!--select.form-input.select-filter(data-placeholder="All", data-minimum-results-for-search="Infinity",  name='city')-->
-                          <!--  option(value="1") Choose the date-->
-                          <!--  option(value="2") Primary-->
-                          <!--  option(value="3") Middle-->
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-lg-6">
-                        <label class="form-label-outside">Duration</label>
-                        <div class="form-wrap form-wrap-validation">
-                          <!-- Select 2-->
-                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                            <option value="1">Any length</option>
-                            <option value="2">2 days</option>
-                            <option value="3">3 days</option>
-                            <option value="4">4 days</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="form-label-outside">Adults</label>
-                        <div class="form-wrap form-wrap-modern">
-                          <input class="form-input input-append" id="form-element-stepper" type="number" min="0" max="300" value="2">
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="form-label-outside">Children</label>
-                        <div class="form-wrap form-wrap-modern">
-                          <input class="form-input input-append" id="form-element-stepper-1" type="number" min="0" max="300" value="0">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-wrap form-button">
-                      <button class="button button-block button-secondary" type="submit">search flight</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </section>
 
@@ -321,6 +196,229 @@
             </div>
           </div>
       </section> -->
+     
+      <section class="section section-variant-1 bg-default novi-background bg-cover"> 
+        <div class="container container-bigger form-request-wrap form-request-wrap-modern">
+        <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
+            <div class="col-xl-8">
+              <div class="parallax-text-wrap">
+                <h3>Rekomendasi Wisata</h3>
+              </div>
+              <hr class="divider divider-sm"> <hr class="divider divider-sm">
+              <hr class="divider divider-sm"> <hr class="divider divider-sm">
+              <hr class="divider divider-sm">
+            </div>
+            <!-- <div class="col-xl-3 text-xl-right"> -->
+            <!-- <a class="button button-secondary button-nina" data-toggle="modal" data-target="#exampleModal" href="#exampleModal">Apa itu rekomendasi?</a></div> -->
+        </div>
+          <br><br>
+            <div class="row row-fix justify-content-sm-center">
+              <div class="col-lg-8 col-xxl-6 text-center">
+                  <h5>Pilih Kriteria Rekomendasi Wisata</h5>
+                  <!-- RD Mailform-->
+                  <form class="rd-mailform form-fix">
+                    <div class="row row-20 row-fix">
+                      <div class="col-lg-12">
+                        <div class="form-wrap form-wrap-validation">
+                          <select class="form-input select-filter" size="3" data-placeholder="Pilih Kriteria" data-minimum-results-for-search="Infinity" name="kriteria[]" id="kriteria" multiple>
+                          @foreach($kritwis as $krit)
+                          <option value="{{$krit->id}}">{{$krit->kriteria}}</option>
+                          @endforeach      
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-wrap form-button text-center">
+                      <button class="button button-secondary pull-center" id="simpankriteria" type="submit">Simpan</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pilih Kriteria Rekomendasi Wisata </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="col-xl-12 modal-body">
+            <p>Menurut Kamus Besar Bahasa Indonesia (KBBI), arti kata Rekomendasi adalah saran yang menganjurkan (membenarkan, menguatkan). Sederhananya rekomendasi merupakan saran yang menganjurkan, membenarkan, atau menguatkan mengenai sesuatu atau seseorang. Rekomendasi ini sangat penting artinya untuk meyakinkan orang lain bahwa sesuatu atau seseorang tepat dan layak. Misalnya, ketika seseorang akan menyewa kamar di penginapan, biasanya mereka akan melihat testimoni dari orang-orang yang pernah menginap sebelumnya, apakah banyak yang merekomendasikan atau tidak.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+              <!-- <button type="button" class="btn btn-primary" id="simpankriteria" onclick="alert(getCheckedCheckboxesFor('kriteria'));" >Simpan</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section section-variant-1 bg-default novi-background bg-cover"> 
+        <div class="container container-bigger form-request-wrap form-request-wrap-modern">
+        <div class="row row-fix justify-content-xl-end row-30 text-center ">
+            <div class="col-xl-12">
+              <div class="parallax-text-wrap">
+                <h4>Masukan Nilai Perbandingan Kriteria Rekomendasi Wisata</h4>
+              </div>
+            </div>
+            <!-- <div class="col-xl-3 text-xl-right"> -->
+            <!-- <a class="button button-secondary button-nina" data-toggle="modal" data-target="#exampleModal" href="#exampleModal">Pilih Kriteria</a></div> -->
+          </div>
+            <div class="row row-fix justify-content-sm-center">
+              <div class="col-lg-6 col-xxl-5">
+                <div class="form-request form-request-modern bg-gray-lighter novi-background">
+                  <h4>Kriteria Rekomendasi</h4>
+                  <!-- RD Mailform-->
+                  <form class="rd-mailform form-fix">
+                    <div class="row row-20 row-fix">
+                      <div class="col-sm-12">
+                        <label class="form-label-outside">From</label>
+                        <div class="form-wrap form-wrap-inline">
+                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
+                            <option value="1">New York</option>
+                            <option value="2">Lisbon</option>
+                            <option value="3">Stockholm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <label class="form-label-outside">To</label>
+                        <div class="form-wrap form-wrap-inline">
+                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
+                            <option value="1">Chicago</option>
+                            <option value="2">Madrid</option>
+                            <option value="3">Paris</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <label class="form-label-outside">Kriteria</label>
+                        <div class="form-wrap form-wrap-validation">
+                          <select class="form-input select-filter" data-placeholder="Pilih Kriteria" data-minimum-results-for-search="Infinity" name="kriteria" id="myselect" name="myselect[]" multiple>
+                                  <option value=""></option>
+                                  <option value="1">red</option>
+                                  <option value="2">orange</option>
+                                  <option value="3">green</option>
+                                  <option value="4">blue</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <label class="form-label-outside">Depart Date</label>
+                        <div class="form-wrap form-wrap-validation">
+                          <!-- Select -->
+                          <input class="form-input" id="dateForm" name="date" type="text" data-time-picker="date">
+                          <label class="form-label" for="dateForm">Choose the date</label>
+                          <!--select.form-input.select-filter(data-placeholder="All", data-minimum-results-for-search="Infinity",  name='city')-->
+                          <!--  option(value="1") Choose the date-->
+                          <!--  option(value="2") Primary-->
+                          <!--  option(value="3") Middle-->
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <label class="form-label-outside">Duration</label>
+                        <div class="form-wrap form-wrap-validation">
+                          <!-- Select 2-->
+                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
+                            <option value="1">Any length</option>
+                            <option value="2">2 days</option>
+                            <option value="3">3 days</option>
+                            <option value="4">4 days</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <label class="form-label-outside">Adults</label>
+                        <div class="form-wrap form-wrap-modern">
+                          <input class="form-input input-append" id="form-element-stepper" type="number" min="0" max="300" value="2">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <label class="form-label-outside">Children</label>
+                        <div class="form-wrap form-wrap-modern">
+                          <input class="form-input input-append" id="form-element-stepper-1" type="number" min="0" max="300" value="0">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-wrap form-button">
+                      <button class="button button-block button-secondary" type="submit">search flight</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="section section-variant-1 bg-default novi-background bg-cover"> 
+        <div class="container container-bigger form-request-wrap form-request-wrap-modern">
+            <div class="row row-fix justify-content-sm-center justify-content-lg-end">
+              <div class="col-lg-12 col-xxl-15">
+                <div class="form-request form-request-modern bg-gray-lighter novi-background">
+                  <h4>Cari Rekomendasi Wisata</h4>
+                 
+                  <form class="rd-mailform form-fix" id="hitung" method="POST">
+                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                      <div class="col-sm-12 row">
+                        <h5>Masukan Nilai Perbandingan Kriteria</h5>
+                      </div>
+                      <div class="col-sm-12 col-lg-12 row">
+                      @foreach($kritwis as $kriteria1)
+                         @foreach($kritwis as $kriteria2)
+                         @if($kriteria1->kriteria == $kriteria2->kriteria) 
+                         @break 
+                         @else
+
+                        <label class="col-sm-2 col-form-label">{{$kriteria1->kriteria}}</label>
+                        <div class="col-sm-8">
+
+                          <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="prioritas[]" id="prioritas">
+                          <option value="" disabled> Pilih Tingkat Kepentingan </option>
+                            <option value=1>1 - Sama pentingnya dengan</option>
+                            <option value=2>2 - Sama atau sedikit lebih penting</option>
+                            <option value=3>3 - Sedikit lebih penting</option>
+                            <option value=4>4 - Sedikit jauh lebih penting</option>
+                            <option value=5>5 - Jauh lebih penting</option>
+                            <option value=6>6 - Sedikit sangat penting</option>
+                            <option value=7>7 - Sangat penting </option>
+                            <option value=8>8 - Sedikit mutlak lebih penting</option>
+                            <option value=9>9 - Multak lebih penting</option>
+                            <option value=10>1/9 - Multak kurang penting</option>
+                            <option value=11>1/8 - Sedikit multak kurang penting</option>
+                            <option value=12>1/7 - Sangat kurang penting</option>
+                            <option value=13>1/6 - Sedikit sangat kurang penting</option>
+                            <option value=14>1/5 - Jauh kurang penting</option>
+                            <option value=15>1/4 - Sedikit ke jauh kurang penting </option>
+                            <option value=16>1/3 - Sedikit kurang penting</option>
+                            <option value=17>1/2 - Sama atau sedikit kurang penting</option>
+                          </select>
+                        </div>
+
+                        <label class="col-sm-2 col-form-label">
+                           {{$kriteria2->kriteria}}  
+                           </label>
+                           @endif
+                        @endforeach
+
+                        @endforeach
+
+                      </div>
+                      <input type="hidden" id="count" value={{$count}} />
+                      @foreach($cost as $cst)
+                        <input type="hidden" name="biaya" id="biaya" value="{{ $cst->id }}">
+                      @endforeach
+                    <div class="form-wrap form-button">
+                      <a class="button button-secondary" type="submit" id="cari">Cari Rekomendasi Wisata</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
      
       <section class="section section-variant-1 bg-default novi-background bg-cover"> 
         <div class="container container-wide">
@@ -409,7 +507,6 @@
           </div>
         </div>
       </section>
-
       <!-- Footer Minimal-->
       <footer class="section page-footer page-footer-minimal novi-background bg-cover text-center bg-gray-darker">
         <div class="container container-wide">
@@ -433,7 +530,24 @@
 </html>
 <script type='text/javascript'>
     // var a = parseInt(document.getElementById("ausgangssprache").value);
-   
+    function getCheckedCheckboxesFor(checkboxName) {
+    var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
+    Array.prototype.forEach.call(checkboxes, function(el) {
+        values.push(el.value);
+    });
+    return values;
+    }
+    var selected = [];
+    document.getElementById('simpankriteria').onclick = function() {
+      for (var option of document.getElementById('kriteria').options)
+      {
+          if (option.selected) {
+              selected.push(option.value);
+          }
+      }
+    }
+    // console.log(selected);
+
     var form = document.getElementById('hitung');
     $('#cari').click(function(e) {
       var myArray = [];
@@ -714,14 +828,6 @@
 
       function getData() {
       
-
-
-
-
-
-
-
-
       // $.ajax({
       //           headers:{    
       //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -738,10 +844,27 @@
       //           }
       //       });
 
-
+      }
+ 
+      function storeKriteria() {
+      
+      $.ajax({
+                headers:{    
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: '/storekriteria',
+                type: 'POST',
+                data: {
+                   data: arrayHasil 
+                },
+                success: function(response)
+                {
+                  //  $('#something').html(response);
+                  //  window.location = "{{ url('/hasilwisata') }}";
+                }
+            });
 
       }
  
-   
 
 </script>

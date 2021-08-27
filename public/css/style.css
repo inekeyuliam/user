@@ -940,6 +940,9 @@ section {
 	}
 }
 
+.checked {
+	color: orange;
+  }
 .ie-10 .page-loader .page-loader-body:before,
 .ie-11 .page-loader .page-loader-body:before {
 	color: #ffa900;
@@ -2337,8 +2340,8 @@ section {
 * Background Secondary 2
 */
 .bg-secondary-2 {
-	background-color: #6d0eb1;
-	fill: #6d0eb1;
+	background-color: #ffa900;
+	fill: #ffa900;
 }
 
 .bg-secondary-2 .way-point > svg {
@@ -2350,7 +2353,7 @@ section {
 }
 
 .bg-secondary-2 .bg-decoration > svg {
-	fill: #6d0eb1;
+	fill: #ffa900;
 }
 
 .bg-secondary-2 .thumbnail-classic .divider-default {
@@ -7229,7 +7232,7 @@ textarea.form-input.form-input-lg {
 		padding-top: 125px;
 	}
 	.section-variant-1 {
-		padding: 150px 0 140px;
+		padding: 200px 0 200px;
 	}
 	.section-variant-2 {
 		padding: 160px 0;
@@ -15404,8 +15407,8 @@ html.tablet .ui-to-top {
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
 	color: #29293a;
-	background: #000000;
-	border: 1px solid #000000;
+	background: #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 3px;
 	cursor: default;
 	float: left;
